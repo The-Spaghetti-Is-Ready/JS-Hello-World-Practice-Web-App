@@ -1,5 +1,4 @@
 var strings = ["hello", "world", "goodbye", "world", "one","two","three"];
-var counter = 0;
 
 alert("Array size: " + strings.length);
 
@@ -9,15 +8,12 @@ console.debug(a);
 a.innerHTML = "Hello, " + " World!";
 
 function changeText(){
-    a.innerHTML = "Goodbye, world!"; 
+    a.innerHTML = "Goodbye, world!";
+    
+    setTimeout(keepChanging, 3000);
 }
-function intervalText(){
-    a.innerHTML = strings[counter];
-    if(counter != strings.length){
-        counter++;
-    }
+function keepChanging(){
+    a.innerHTML = strings[Math.random];
 }
-
-setTimeout(intervalText, 3000);
 
 var b = document.getElementById("button").addEventListener("click", changeText);
