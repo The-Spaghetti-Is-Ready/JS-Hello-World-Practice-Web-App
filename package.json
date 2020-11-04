@@ -1,0 +1,21 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "simple hello world program using js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "c:\\Users\\marco\\Documents\\randomcodestuff\\helloworldjs"
+  },
+  "keywords": [
+    "helloworld"
+  ],
+  "author": "Marco",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.12.1"
+  }
+}
