@@ -8,12 +8,20 @@ console.debug(a);
 a.innerHTML = "Hello, " + " World!";
 
 function changeText(){
+    b.disabled = true;
+    var randomstr = strings[Math.floor(Math.random() * strings.length)];
     a.innerHTML = "Goodbye, world!";
+    b.innerHTML = "Changing to "+ randomstr;
     
-    setTimeout(keepChanging, 3000);
+    setTimeout(function(){
+        keepChanging(randomstr)
+    }, 3000);
 }
-function keepChanging(){
-    a.innerHTML = strings[Math.random];
+function keepChanging(randomstr){
+    a.innerHTML = randomstr;
+    b.disabled = false;
 }
 
-var b = document.getElementById("button").addEventListener("click", changeText);
+var b = document.getElementById("button");
+b.addEventListener("click", changeText);
+
