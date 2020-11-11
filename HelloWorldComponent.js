@@ -1,6 +1,6 @@
-var h = React.createElement
+var {createElement: h, useState} = React
 
-function HelloWorld(){
-    return h('h1', {}, 'hello world')
-  }
+function HelloWorld({headerStr}){
+  return h('h1', {}, headerStr)
+}
   

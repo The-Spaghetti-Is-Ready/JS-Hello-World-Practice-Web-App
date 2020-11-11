@@ -1,5 +1,6 @@
-var h = React.createElement
+var {createElement: h, useState} = React
 
 function TestDiv(){
-    return h('div', {}, h(HelloWorld), h(TestButton))
-  }
+    var [headerStr, setHeaderStr] = useState('Hello World')
+    return h('div', {}, h(HelloWorld, {headerStr}), h(TestButton, {setHeaderStr}))
+}
