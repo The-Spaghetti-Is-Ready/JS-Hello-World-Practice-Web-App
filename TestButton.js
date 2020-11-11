@@ -1,8 +1,11 @@
 var {createElement: h, useState} = React
 
-function TestButton({setHeaderStr}){
+function TestButton({setState, message}){
     return h('button', {onClick(){
-        setHeaderStr('Goodbye World')
-        console.debug("123")
+        setState({
+            aaa: message,
+            bbb: {color: 'red'},
+        })
+        console.debug(message + " button is working")
     }}, 'change')
 }
