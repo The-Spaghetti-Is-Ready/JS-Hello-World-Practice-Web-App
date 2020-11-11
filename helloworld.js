@@ -1,7 +1,5 @@
 var strings = ["hello", "world", "goodbye", "world", "one","two","three"];
 
-alert("Array size: " + strings.length);
-
 var a = document.getElementById("hello");
 console.debug(a);
 
