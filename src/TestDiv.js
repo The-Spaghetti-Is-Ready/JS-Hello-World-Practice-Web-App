@@ -1,7 +1,10 @@
-var {createElement: h, useState} = React
+import {createElement as h, useState} from 'react'
+import {TestButton} from './TestButton'
+import {HelloMarsButton} from './hellomarsbutton'
+import {HelloWorld} from './HelloWorldComponent'
 var helloString = 'Hello World'
 
-function TestDiv(){
+export function TestDiv(){
     var [state, setState] = useState({
         aaa: helloString, //object creation
         bbb: {color: 'purple'}, 

@@ -1,4 +1,6 @@
-function HelloMarsButton({setState}){
+import {createElement as h, useState} from 'react'
+
+export function HelloMarsButton({setState}){
     return h('button', {onClick(){
         setState({
             aaa: 'Hello Mars',

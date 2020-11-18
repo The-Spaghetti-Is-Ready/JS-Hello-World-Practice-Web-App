@@ -1,6 +1,8 @@
-var {createElement: h, useState} = React
+import React from 'react'
 
-function TestButton({setState, message}){
+var {createElement: h} = React
+
+export function TestButton({setState, message}){
     return h('button', {onClick(){
         setState({
             aaa: message,
