@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import {TestDiv} from './TestDiv'
-import {SwitchButton} from './SwitchButton';
+import {TestDiv} from './react app/TestDiv'
+import {SwitchButton} from './react app/SwitchButton';
 const h = React.createElement
 
 export function mainThree(){
