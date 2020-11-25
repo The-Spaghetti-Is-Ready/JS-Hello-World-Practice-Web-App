@@ -9,8 +9,8 @@ export function TestDiv(){
         aaa: helloString, //object creation
         bbb: {color: 'purple'}, 
     }) //creates the state
+    const [isTagShown, setIsTagShown] = useState(false)
 
-    
     useEffect(() => {
         setTimeout(()=>{
             setState({
@@ -21,12 +21,14 @@ export function TestDiv(){
         console.debug('Effect!')
     }, [])
 
-    return h('div', {}, 
+    return h('div', {
+    }, 
         h(HelloWorld, {
             headerStr: state.aaa,
             h1Style: state.bbb,
         }),
-        h(TestButton, {setState, message: 'Goodbye World'}),
+        isTagShown && 'fancy tag',
+        h(TestButton, {setState, message: 'Goodbye World', setIsTagShown}),
         h(HelloMarsButton, {setState})
     )
 }

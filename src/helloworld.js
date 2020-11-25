@@ -11,7 +11,6 @@ export function main(){
     b.addEventListener("click", function(){
         changeText(a, b)
     });
-    
 }
 
 function changeText(a, b){
