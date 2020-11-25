@@ -1,4 +1,4 @@
-import {createElement as h, useState} from 'react'
+import {createElement as h, useState, useEffect} from 'react'
 import {TestButton} from './TestButton'
 import {HelloMarsButton} from './hellomarsbutton'
 import {HelloWorld} from './HelloWorldComponent'
@@ -9,6 +9,18 @@ export function TestDiv(){
         aaa: helloString, //object creation
         bbb: {color: 'purple'}, 
     }) //creates the state
+
+    
+    useEffect(() => {
+        setTimeout(()=>{
+            setState({
+                aaa: helloString,
+                bbb: {color: 'navy'} 
+            })
+        }, 2000)
+        console.debug('Effect!')
+    }, [])
+
     return h('div', {}, 
         h(HelloWorld, {
             headerStr: state.aaa,
