@@ -2084,25 +2084,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/SwitchButton.js":
-/*!*****************************!*\
-  !*** ./src/SwitchButton.js ***!
-  \*****************************/
-/*! namespace exports */
-/*! export SwitchButton [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SwitchButton\": () => /* binding */ SwitchButton\n/* harmony export */ });\n/* harmony import */ var _helloworld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helloworld */ \"./src/helloworld.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/button/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\n\r\n\r\nfunction SwitchButton(){\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__.default, {shape: 'round', onClick(){\r\n        (0,_helloworld__WEBPACK_IMPORTED_MODULE_0__.main)()\r\n    }}, 'Run old app')\r\n}\r\n\n\n//# sourceURL=webpack://package/./src/SwitchButton.js?");
-
-/***/ }),
-
-/***/ "./src/TestButton.js":
-/*!***************************!*\
-  !*** ./src/TestButton.js ***!
-  \***************************/
+/***/ "./src/buttons(single-dependency)/TestButton.js":
+/*!******************************************************!*\
+  !*** ./src/buttons(single-dependency)/TestButton.js ***!
+  \******************************************************/
 /*! namespace exports */
 /*! export TestButton [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -2110,29 +2095,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TestButton\": () => /* binding */ TestButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/button/index.js\");\n\r\n\r\n\r\nconst {createElement: h} = react__WEBPACK_IMPORTED_MODULE_0__\r\n\r\nfunction TestButton({setState, message, setIsTagShown}){\r\n    return h(antd__WEBPACK_IMPORTED_MODULE_1__.default, {\r\n      shape: 'round',\r\n      onClick(){\r\n        setState({\r\n            aaa: message,\r\n            bbb: {color: 'red'},\r\n        })\r\n      console.debug(message + \" button is working\")\r\n      setIsTagShown(true)\r\n    }}, 'change')\r\n}\r\n\n\n//# sourceURL=webpack://package/./src/TestButton.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TestButton\": () => /* binding */ TestButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/button/index.js\");\n\r\n\r\n\r\nconst {createElement: h} = react__WEBPACK_IMPORTED_MODULE_0__\r\n\r\nfunction TestButton({setState, message, setIsTagShown}){\r\n    return h(antd__WEBPACK_IMPORTED_MODULE_1__.default, {\r\n      shape: 'round',\r\n      onClick(){\r\n        setState({\r\n            aaa: message,\r\n            bbb: {color: 'red'},\r\n        })\r\n      console.debug(message + \" button is working\")\r\n      setIsTagShown(true)\r\n    }}, 'change')\r\n}\r\n\n\n//# sourceURL=webpack://package/./src/buttons(single-dependency)/TestButton.js?");
 
 /***/ }),
 
-/***/ "./src/TestDiv.js":
-/*!************************!*\
-  !*** ./src/TestDiv.js ***!
-  \************************/
-/*! namespace exports */
-/*! export TestDiv [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TestDiv\": () => /* binding */ TestDiv\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _TestButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TestButton */ \"./src/TestButton.js\");\n/* harmony import */ var _hellomarsbutton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hellomarsbutton */ \"./src/hellomarsbutton.js\");\n/* harmony import */ var _HelloWorldComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HelloWorldComponent */ \"./src/HelloWorldComponent.js\");\n\r\n\r\n\r\n\r\nconst helloString = 'Hello World'\r\n\r\nfunction TestDiv(){\r\n    const [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\r\n        aaa: helloString, //object creation\r\n        bbb: {color: 'purple'}, \r\n    }) //creates the state\r\n    const [isTagShown, setIsTagShown] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false)\r\n\r\n    ;(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {\r\n        setTimeout(()=>{\r\n            setState({\r\n                aaa: helloString,\r\n                bbb: {color: 'navy'} \r\n            })\r\n        }, 2000)\r\n        console.debug('Effect!')\r\n    }, [])\r\n\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', {\r\n    }, \r\n        (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_HelloWorldComponent__WEBPACK_IMPORTED_MODULE_3__.HelloWorld, {\r\n            headerStr: state.aaa,\r\n            h1Style: state.bbb,\r\n        }),\r\n        isTagShown && 'fancy tag',\r\n        (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_TestButton__WEBPACK_IMPORTED_MODULE_1__.TestButton, {setState, message: 'Goodbye World', setIsTagShown}),\r\n        (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_hellomarsbutton__WEBPACK_IMPORTED_MODULE_2__.HelloMarsButton, {setState})\r\n    )\r\n}\r\n\r\n\n\n//# sourceURL=webpack://package/./src/TestDiv.js?");
-
-/***/ }),
-
-/***/ "./src/hellomarsbutton.js":
-/*!********************************!*\
-  !*** ./src/hellomarsbutton.js ***!
-  \********************************/
+/***/ "./src/buttons(single-dependency)/hellomarsbutton.js":
+/*!***********************************************************!*\
+  !*** ./src/buttons(single-dependency)/hellomarsbutton.js ***!
+  \***********************************************************/
 /*! namespace exports */
 /*! export HelloMarsButton [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -2140,29 +2110,44 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HelloMarsButton\": () => /* binding */ HelloMarsButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\nfunction HelloMarsButton({setState}){\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)('button', {onClick(){\r\n        setState({\r\n            aaa: 'Hello Mars',\r\n            bbb: {color: 'yellow'},\r\n        })\r\n        console.debug('Mars button is working')\r\n    }}, 'Change to Mars')\r\n}\n\n//# sourceURL=webpack://package/./src/hellomarsbutton.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HelloMarsButton\": () => /* binding */ HelloMarsButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\nfunction HelloMarsButton({setState}){\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)('button', {onClick(){\r\n        setState({\r\n            aaa: 'Hello Mars',\r\n            bbb: {color: 'yellow'},\r\n        })\r\n        console.debug('Mars button is working')\r\n    }}, 'Change to Mars')\r\n}\n\n//# sourceURL=webpack://package/./src/buttons(single-dependency)/hellomarsbutton.js?");
 
 /***/ }),
 
-/***/ "./src/helloworld.js":
-/*!***************************!*\
-  !*** ./src/helloworld.js ***!
-  \***************************/
+/***/ "./src/react app/SwitchButton.js":
+/*!***************************************!*\
+  !*** ./src/react app/SwitchButton.js ***!
+  \***************************************/
 /*! namespace exports */
-/*! export main [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export SwitchButton [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"main\": () => /* binding */ main\n/* harmony export */ });\nconst strings = [\"hello\", \"world\", \"goodbye\", \"world\", \"one\",\"two\",\"three\"];\r\nlet randomstr \r\n\r\nfunction main(){\r\n    const a = document.getElementById(\"hello\");\r\n    console.debug(a);\r\n\r\n    a.innerHTML = \"Hello, \" + \" World!\";\r\n\r\n    const b = document.getElementById(\"button\");\r\n    b.addEventListener(\"click\", function(){\r\n        changeText(a, b)\r\n    });\r\n}\r\n\r\nfunction changeText(a, b){\r\n    randomstr = strings[Math.floor(Math.random() * strings.length)];\r\n    \r\n    b.disabled = true;\r\n    a.innerHTML = \"Goodbye, world!\";\r\n    b.innerHTML = \"Changing to \"+ randomstr;\r\n    \r\n    setTimeout(function(){\r\n        keepChanging(a, b)\r\n        b.innerHTML = \"Change\"\r\n    }, 3000);\r\n}\r\n\r\nfunction keepChanging(a, b){\r\n    a.innerHTML = randomstr;\r\n    b.disabled = false;\r\n}\r\n\r\n\n\n//# sourceURL=webpack://package/./src/helloworld.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SwitchButton\": () => /* binding */ SwitchButton\n/* harmony export */ });\n/* harmony import */ var _react_app_legacy_helloworld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../react app/legacy/helloworld */ \"./src/react app/legacy/helloworld.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/button/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\n\r\n\r\nfunction SwitchButton(){\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__.default, {shape: 'round', onClick(){\r\n        (0,_react_app_legacy_helloworld__WEBPACK_IMPORTED_MODULE_0__.main)()\r\n    }}, 'Run old app')\r\n}\r\n\n\n//# sourceURL=webpack://package/./src/react_app/SwitchButton.js?");
 
 /***/ }),
 
-/***/ "./src/helloworld3.js":
-/*!****************************!*\
-  !*** ./src/helloworld3.js ***!
-  \****************************/
+/***/ "./src/react app/TestDiv.js":
+/*!**********************************!*\
+  !*** ./src/react app/TestDiv.js ***!
+  \**********************************/
+/*! namespace exports */
+/*! export TestDiv [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TestDiv\": () => /* binding */ TestDiv\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _buttons_single_dependency_TestButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../buttons(single-dependency)/TestButton */ \"./src/buttons(single-dependency)/TestButton.js\");\n/* harmony import */ var _buttons_single_dependency_hellomarsbutton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../buttons(single-dependency)/hellomarsbutton */ \"./src/buttons(single-dependency)/hellomarsbutton.js\");\n/* harmony import */ var _HelloWorldComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../HelloWorldComponent */ \"./src/HelloWorldComponent.js\");\n\r\n\r\n\r\n\r\nconst helloString = 'Hello World'\r\n\r\nfunction TestDiv(){\r\n    const [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\r\n        aaa: helloString, //object creation\r\n        bbb: {color: 'purple'}, \r\n    }) //creates the state\r\n    const [isTagShown, setIsTagShown] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false)\r\n\r\n    ;(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {\r\n        setTimeout(()=>{\r\n            setState({\r\n                aaa: helloString,\r\n                bbb: {color: 'navy'} \r\n            })\r\n        }, 2000)\r\n        console.debug('Effect!')\r\n    }, [])\r\n\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', {\r\n    }, \r\n        (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_HelloWorldComponent__WEBPACK_IMPORTED_MODULE_3__.HelloWorld, {\r\n            headerStr: state.aaa,\r\n            h1Style: state.bbb,\r\n        }),\r\n        isTagShown && 'fancy tag',\r\n        (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_buttons_single_dependency_TestButton__WEBPACK_IMPORTED_MODULE_1__.TestButton, {setState, message: 'Goodbye World', setIsTagShown}),\r\n        (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_buttons_single_dependency_hellomarsbutton__WEBPACK_IMPORTED_MODULE_2__.HelloMarsButton, {setState})\r\n    )\r\n}\r\n\r\n\n\n//# sourceURL=webpack://package/./src/react_app/TestDiv.js?");
+
+/***/ }),
+
+/***/ "./src/react app/helloworld3.js":
+/*!**************************************!*\
+  !*** ./src/react app/helloworld3.js ***!
+  \**************************************/
 /*! namespace exports */
 /*! export mainThree [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -2170,21 +2155,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"mainThree\": () => /* binding */ mainThree\n/* harmony export */ });\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _TestDiv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TestDiv */ \"./src/TestDiv.js\");\n/* harmony import */ var _SwitchButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SwitchButton */ \"./src/SwitchButton.js\");\n\r\n\r\n\r\n\r\nconst h = react__WEBPACK_IMPORTED_MODULE_1__.createElement\r\n\r\nfunction mainThree(){\r\n  react_dom__WEBPACK_IMPORTED_MODULE_0__.render(\r\n    h('div', {},\r\n      h(_SwitchButton__WEBPACK_IMPORTED_MODULE_3__.SwitchButton),\r\n      h(_TestDiv__WEBPACK_IMPORTED_MODULE_2__.TestDiv)\r\n    ),\r\n    document.getElementById('root')\r\n  )\r\n}  \r\n\r\n  \n\n//# sourceURL=webpack://package/./src/helloworld3.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"mainThree\": () => /* binding */ mainThree\n/* harmony export */ });\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _TestDiv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TestDiv */ \"./src/react app/TestDiv.js\");\n/* harmony import */ var _SwitchButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SwitchButton */ \"./src/react app/SwitchButton.js\");\n\r\n\r\n\r\n\r\nconst h = react__WEBPACK_IMPORTED_MODULE_1__.createElement\r\n\r\nfunction mainThree(){\r\n  react_dom__WEBPACK_IMPORTED_MODULE_0__.render(\r\n    h('div', {},\r\n      h(_SwitchButton__WEBPACK_IMPORTED_MODULE_3__.SwitchButton),\r\n      h(_TestDiv__WEBPACK_IMPORTED_MODULE_2__.TestDiv)\r\n    ),\r\n    document.getElementById('root')\r\n  )\r\n}  \r\n\r\n  \n\n//# sourceURL=webpack://package/./src/react_app/helloworld3.js?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/react app/index.js":
+/*!********************************!*\
+  !*** ./src/react app/index.js ***!
+  \********************************/
 /*! namespace exports */
 /*! exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _helloworld3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helloworld3 */ \"./src/helloworld3.js\");\n/* harmony import */ var antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/dist/antd.css */ \"./node_modules/antd/dist/antd.css\");\n\r\n\r\n\r\nwindow.addEventListener('load', function (){\r\n    (0,_helloworld3__WEBPACK_IMPORTED_MODULE_0__.mainThree)()\r\n})\n\n//# sourceURL=webpack://package/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _helloworld3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helloworld3 */ \"./src/react app/helloworld3.js\");\n/* harmony import */ var antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/dist/antd.css */ \"./node_modules/antd/dist/antd.css\");\n\r\n\r\n\r\nwindow.addEventListener('load', function (){\r\n    (0,_helloworld3__WEBPACK_IMPORTED_MODULE_0__.mainThree)()\r\n})\n\n//# sourceURL=webpack://package/./src/react_app/index.js?");
+
+/***/ }),
+
+/***/ "./src/react app/legacy/helloworld.js":
+/*!********************************************!*\
+  !*** ./src/react app/legacy/helloworld.js ***!
+  \********************************************/
+/*! namespace exports */
+/*! export main [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"main\": () => /* binding */ main\n/* harmony export */ });\nconst strings = [\"hello\", \"world\", \"goodbye\", \"world\", \"one\",\"two\",\"three\"];\r\nlet randomstr \r\n\r\nfunction main(){\r\n    const a = document.getElementById(\"hello\");\r\n    console.debug(a);\r\n\r\n    a.innerHTML = \"Hello, \" + \" World!\";\r\n\r\n    const b = document.getElementById(\"button\");\r\n    b.addEventListener(\"click\", function(){\r\n        changeText(a, b)\r\n    });\r\n}\r\n\r\nfunction changeText(a, b){\r\n    randomstr = strings[Math.floor(Math.random() * strings.length)];\r\n    \r\n    b.disabled = true;\r\n    a.innerHTML = \"Goodbye, world!\";\r\n    b.innerHTML = \"Changing to \"+ randomstr;\r\n    \r\n    setTimeout(function(){\r\n        keepChanging(a, b)\r\n        b.innerHTML = \"Change\"\r\n    }, 3000);\r\n}\r\n\r\nfunction keepChanging(a, b){\r\n    a.innerHTML = randomstr;\r\n    b.disabled = false;\r\n}\r\n\r\n\n\n//# sourceURL=webpack://package/./src/react_app/legacy/helloworld.js?");
 
 /***/ })
 
@@ -2269,7 +2269,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hel
 /************************************************************************/
 /******/ 	// startup
 /******/ 	// Load entry module
-/******/ 	__webpack_require__("./src/index.js");
+/******/ 	__webpack_require__("./src/react app/index.js");
 /******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;

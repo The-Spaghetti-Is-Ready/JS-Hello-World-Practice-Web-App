@@ -1,4 +1,4 @@
-import {main} from './helloworld'
+import {main} from '../react app/legacy/helloworld'
 import {Button} from 'antd'
 import{createElement as h} from 'react'
 

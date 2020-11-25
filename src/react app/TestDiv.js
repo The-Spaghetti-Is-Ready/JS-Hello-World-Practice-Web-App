@@ -1,7 +1,7 @@
 import {createElement as h, useState, useEffect} from 'react'
-import {TestButton} from './TestButton'
-import {HelloMarsButton} from './hellomarsbutton'
-import {HelloWorld} from './HelloWorldComponent'
+import {TestButton} from '../buttons(single-dependency)/TestButton'
+import {HelloMarsButton} from '../buttons(single-dependency)/hellomarsbutton'
+import {HelloWorld} from '../HelloWorldComponent'
 const helloString = 'Hello World'
 
 export function TestDiv(){
