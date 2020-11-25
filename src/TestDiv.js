@@ -2,10 +2,10 @@ import {createElement as h, useState} from 'react'
 import {TestButton} from './TestButton'
 import {HelloMarsButton} from './hellomarsbutton'
 import {HelloWorld} from './HelloWorldComponent'
-var helloString = 'Hello World'
+const helloString = 'Hello World'
 
 export function TestDiv(){
-    var [state, setState] = useState({
+    const [state, setState] = useState({
         aaa: helloString, //object creation
         bbb: {color: 'purple'}, 
     }) //creates the state

@@ -1,6 +1,6 @@
 import React from 'react'
 
-var {createElement: h} = React
+const {createElement: h} = React
 
 export function TestButton({setState, message}){
     return h('button', {onClick(){

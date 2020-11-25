@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import {TestDiv} from './TestDiv'
-var h = React.createElement
+const h = React.createElement
 
 export function mainThree(){
   ReactDOM.render(

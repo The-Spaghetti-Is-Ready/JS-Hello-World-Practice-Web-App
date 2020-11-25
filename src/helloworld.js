@@ -1,13 +1,13 @@
-var strings = ["hello", "world", "goodbye", "world", "one","two","three"];
-var randomstr
+const strings = ["hello", "world", "goodbye", "world", "one","two","three"];
+let randomstr 
 
 export function main(){
-    var a = document.getElementById("hello");
+    const a = document.getElementById("hello");
     console.debug(a);
 
     a.innerHTML = "Hello, " + " World!";
 
-    var b = document.getElementById("button");
+    const b = document.getElementById("button");
     b.addEventListener("click", function(){
         changeText(a, b)
     });
