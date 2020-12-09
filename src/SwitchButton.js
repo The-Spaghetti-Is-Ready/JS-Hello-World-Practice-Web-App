@@ -2,8 +2,9 @@ import {main} from './legacy/helloworld'
 import {Button} from 'antd'
 import{createElement as h} from 'react'
 
-export function SwitchButton(){
+export function SwitchButton({setState}){
     return h(Button, {shape: 'round', onClick(){
-        main()
-    }}, 'Run old app')
+        // main()
+        setState({subApp: 'NewApp'})
+    }}, 'Show new app')
 }

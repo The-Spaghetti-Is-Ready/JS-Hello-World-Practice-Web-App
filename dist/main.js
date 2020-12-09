@@ -2069,18 +2069,33 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/helloworld3.js":
-/*!****************************!*\
-  !*** ./src/helloworld3.js ***!
-  \****************************/
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
 /*! namespace exports */
-/*! export mainThree [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export App [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"mainThree\": () => /* binding */ mainThree\n/* harmony export */ });\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _react_app_TestDiv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./react app/TestDiv */ \"./src/react app/TestDiv.js\");\n/* harmony import */ var _react_app_SwitchButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./react app/SwitchButton */ \"./src/react app/SwitchButton.js\");\n/* harmony import */ var _legacy_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./legacy/index */ \"./src/legacy/index.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nconst h = react__WEBPACK_IMPORTED_MODULE_1__.createElement\r\n\r\nfunction mainThree(){\r\n  react_dom__WEBPACK_IMPORTED_MODULE_0__.render(\r\n    h('div', {},\r\n      h(_react_app_SwitchButton__WEBPACK_IMPORTED_MODULE_3__.SwitchButton),\r\n      h(_react_app_TestDiv__WEBPACK_IMPORTED_MODULE_2__.TestDiv),\r\n     /* h('div',{id: 'root2'},\r\n        h('h1', {id: 'hello', style: {color: 'orange'}}),\r\n        h(Button, {id: 'button', shape: 'round', onClick(){}}, 'change')\r\n      )*/  \r\n      h(_legacy_index__WEBPACK_IMPORTED_MODULE_4__.Legacy)\r\n    ),\r\n    document.getElementById('root')\r\n  )\r\n}  \r\n\r\n/* <div id='root2'>\r\n<h1 id=\"hello\" style = \"color: orange;\"></h1>\r\n<button id =\"button\">change</button>\r\n</div> */\n\n//# sourceURL=webpack://package/./src/helloworld3.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"App\": () => /* binding */ App\n/* harmony export */ });\n/* harmony import */ var _react_app_TestDiv__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./react app/TestDiv */ \"./src/react app/TestDiv.js\");\n/* harmony import */ var _SwitchButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SwitchButton */ \"./src/SwitchButton.js\");\n/* harmony import */ var _legacy_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./legacy/index */ \"./src/legacy/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\n\r\n\r\n\r\nfunction App(){\r\n  const [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)({subApp: 'LegApp'})\r\n\r\n  return (0,react__WEBPACK_IMPORTED_MODULE_3__.createElement)('div', {},\r\n    (0,react__WEBPACK_IMPORTED_MODULE_3__.createElement)(_SwitchButton__WEBPACK_IMPORTED_MODULE_1__.SwitchButton, {setState}),\r\n    state.subApp == 'NewApp' && (0,react__WEBPACK_IMPORTED_MODULE_3__.createElement)(_react_app_TestDiv__WEBPACK_IMPORTED_MODULE_0__.TestDiv),\r\n    state.subApp == 'LegApp' && (0,react__WEBPACK_IMPORTED_MODULE_3__.createElement)(_legacy_index__WEBPACK_IMPORTED_MODULE_2__.Legacy)\r\n  )\r\n}\r\n\r\n \r\n\n\n//# sourceURL=webpack://package/./src/App.js?");
+
+/***/ }),
+
+/***/ "./src/SwitchButton.js":
+/*!*****************************!*\
+  !*** ./src/SwitchButton.js ***!
+  \*****************************/
+/*! namespace exports */
+/*! export SwitchButton [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SwitchButton\": () => /* binding */ SwitchButton\n/* harmony export */ });\n/* harmony import */ var _legacy_helloworld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./legacy/helloworld */ \"./src/legacy/helloworld.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/button/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\n\r\n\r\nfunction SwitchButton({setState}){\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__.default, {shape: 'round', onClick(){\r\n        // main()\r\n        setState({subApp: 'NewApp'})\r\n    }}, 'Run old app')\r\n}\r\n\n\n//# sourceURL=webpack://package/./src/SwitchButton.js?");
 
 /***/ }),
 
@@ -2094,7 +2109,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _helloworld3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helloworld3 */ \"./src/helloworld3.js\");\n/* harmony import */ var antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/dist/antd.css */ \"./node_modules/antd/dist/antd.css\");\n\r\n\r\n\r\nwindow.addEventListener('load', function (){\r\n    (0,_helloworld3__WEBPACK_IMPORTED_MODULE_0__.mainThree)()\r\n})\n\n//# sourceURL=webpack://package/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ \"./src/App.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/dist/antd.css */ \"./node_modules/antd/dist/antd.css\");\n\r\n\r\n\r\n\r\n\r\nwindow.addEventListener('load', function (){\r\n  mainThree()\r\n})\r\n\r\nfunction mainThree(){\r\n  react_dom__WEBPACK_IMPORTED_MODULE_1__.render(\r\n    (0,react__WEBPACK_IMPORTED_MODULE_2__.createElement)(_App__WEBPACK_IMPORTED_MODULE_0__.App),\r\n    document.getElementById('root')\r\n  )\r\n} \n\n//# sourceURL=webpack://package/./src/index.js?");
 
 /***/ }),
 
@@ -2140,21 +2155,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HelloWorld\": () => /* binding */ HelloWorld\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\nconst {createElement: h, useState} = react__WEBPACK_IMPORTED_MODULE_0__\r\n\r\nfunction HelloWorld({headerStr, h1Style}){\r\n  return h('h1', {style: h1Style}, headerStr)\r\n}\r\n  \n\n//# sourceURL=webpack://package/./src/react_app/HelloWorldComponent.js?");
-
-/***/ }),
-
-/***/ "./src/react app/SwitchButton.js":
-/*!***************************************!*\
-  !*** ./src/react app/SwitchButton.js ***!
-  \***************************************/
-/*! namespace exports */
-/*! export SwitchButton [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"SwitchButton\": () => /* binding */ SwitchButton\n/* harmony export */ });\n/* harmony import */ var _legacy_helloworld__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../legacy/helloworld */ \"./src/legacy/helloworld.js\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ \"./node_modules/antd/es/button/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\r\n\r\n\r\n\r\nfunction SwitchButton(){\r\n    return (0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__.default, {shape: 'round', onClick(){\r\n        (0,_legacy_helloworld__WEBPACK_IMPORTED_MODULE_0__.main)()\r\n    }}, 'Run old app')\r\n}\r\n\n\n//# sourceURL=webpack://package/./src/react_app/SwitchButton.js?");
 
 /***/ }),
 
