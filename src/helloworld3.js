@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import {TestDiv} from './react app/TestDiv'
-import {SwitchButton} from './react app/SwitchButton'
+import {SwitchButton} from './SwitchButton'
 import {Legacy} from './legacy/index'
 import {createElement as h} from 'react'
 
