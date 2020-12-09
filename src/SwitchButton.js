@@ -1,4 +1,3 @@
-import {main} from './legacy/helloworld'
 import {Button} from 'antd'
 import{createElement as h} from 'react'
 
