@@ -16,21 +16,7 @@ function SwitchButton(_ref) {
       defaultsubapp = _ref.defaultsubapp;
   return (0, _react.createElement)('div', {
     id: 'appbuttons'
-  }, (0, _react.createElement)(_antd.Button, {
-    shape: 'round',
-    onClick: function onClick() {
-      setState({
-        subApp: 'NewApp'
-      });
-    }
-  }, 'show new app'), (0, _react.createElement)(_antd.Button, {
-    shape: 'round',
-    onClick: function onClick() {
-      setState({
-        subApp: 'LegApp'
-      });
-    }
-  }, 'show old app'), (0, _react.createElement)(_antd.Select, {
+  }, (0, _react.createElement)(_antd.Select, {
     defaultValue: defaultsubapp,
     style: {
       width: 120

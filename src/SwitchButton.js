@@ -6,12 +6,6 @@ const { Option } = Select
 
 export function SwitchButton({setState, defaultsubapp}){
   return h('div', {id: 'appbuttons'}, 
-    h(Button, {shape: 'round', onClick(){
-      setState({subApp: 'NewApp'})
-    }}, 'show new app'),
-    h(Button, {shape: 'round', onClick(){
-      setState({subApp: 'LegApp'})
-    }}, 'show old app'),
     h(Select, {defaultValue: defaultsubapp, style: {width: 120}, onChange: function (value){
       handleChange(value, setState)
     }},
