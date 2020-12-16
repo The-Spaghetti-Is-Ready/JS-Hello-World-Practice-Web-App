@@ -4,13 +4,12 @@ import {Legacy} from './legacy/index'
 import {createElement as h, useState} from 'react'
 
 export function App(){
-  const [state, setState] = useState({subApp: 'LegApp'})
+  const defaultsubapp = 'NewApp'
+  const [state, setState] = useState({subApp: defaultsubapp})
 
   return h('div', {},
-    h(SwitchButton, {setState}),
+    h(SwitchButton, {setState, defaultsubapp}),
     state.subApp == 'NewApp' && h(TestDiv),
     state.subApp == 'LegApp' && h(Legacy)
   )
 }
-
- 
