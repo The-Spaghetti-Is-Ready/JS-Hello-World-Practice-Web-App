@@ -10,7 +10,7 @@ export function SwitchButton({setState, defaultsubapp}){
       handleChange(value, setState)
     }},
       h(Option, {value: "LegApp", style: {width: 120}}, 'Legacy App'),
-      h(Option, {value: "NewApp", style: {width: 120}}, 'New App' )
+      h(Option, {value: "NewApp", style: {width: 120}}, 'New App')
     )
   )
 }
