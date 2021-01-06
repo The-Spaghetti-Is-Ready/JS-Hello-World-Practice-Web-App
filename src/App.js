@@ -14,6 +14,6 @@ export function App(){
     state.subApp == 'NewApp' && h(TestDiv),
     state.subApp == 'LegApp' && h(Legacy),
     state.subApp == 'Menu' && h(MainMenu),
-    state.subapp = 'Rental Report' && h(RentalsReport)
+    state.subApp == 'Rentals Report' && h(RentalsReport)
   )
 }
