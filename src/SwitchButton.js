@@ -12,7 +12,8 @@ export function SwitchButton({setState, defaultsubapp}){
     }},
       h(Option, {value: "LegApp", style: {width: 120}}, 'Legacy App'),
       h(Option, {value: "NewApp", style: {width: 120}}, 'New App'),
-      h(Option, {value: "Menu", style: {width: 120}}, 'Menu')
+      h(Option, {value: "Menu", style: {width: 120}}, 'Menu'),
+      h(Option, {value: "Rentals Report", style: {width: 120}}, 'Rentals Report')
     )
   )
 }

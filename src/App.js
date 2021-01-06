@@ -1,6 +1,7 @@
 import {TestDiv} from './react app/TestDiv'
 import {SwitchButton} from './SwitchButton'
 import {MainMenu} from './Menus/MainMenu'
+import { RentalsReport } from './RentalsReport/RentalsReport'
 import {Legacy} from './legacy/index'
 import {createElement as h, useState} from 'react'
 
@@ -12,6 +13,7 @@ export function App(){
     h(SwitchButton, {setState, defaultsubapp}),
     state.subApp == 'NewApp' && h(TestDiv),
     state.subApp == 'LegApp' && h(Legacy),
-    state.subApp == 'Menu' && h(MainMenu)
+    state.subApp == 'Menu' && h(MainMenu),
+    state.subapp = 'Rental Report' && h(RentalsReport)
   )
 }
