@@ -12,6 +12,6 @@ export function App(){
     h(SwitchButton, {setState, defaultsubapp}),
     state.subApp == 'NewApp' && h(TestDiv),
     state.subApp == 'LegApp' && h(Legacy),
-    h(MainMenu)
+    state.subApp == 'Menu' && h(MainMenu)
   )
 }

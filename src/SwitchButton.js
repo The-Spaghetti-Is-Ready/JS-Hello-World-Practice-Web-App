@@ -2,6 +2,7 @@ import {Button} from 'antd'
 import{createElement as h} from 'react'
 import { Select } from 'antd'
 
+
 const { Option } = Select
 
 export function SwitchButton({setState, defaultsubapp}){
@@ -10,7 +11,8 @@ export function SwitchButton({setState, defaultsubapp}){
       handleChange(value, setState)
     }},
       h(Option, {value: "LegApp", style: {width: 120}}, 'Legacy App'),
-      h(Option, {value: "NewApp", style: {width: 120}}, 'New App')
+      h(Option, {value: "NewApp", style: {width: 120}}, 'New App'),
+      h(Option, {value: "Menu", style: {width: 120}}, 'Menu')
     )
   )
 }
